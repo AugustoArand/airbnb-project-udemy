@@ -1,3 +1,6 @@
+// Logo construida em formato de componente, mas nesse quesito é para deixar a importação enxuta e de fácil rastreio
+// para eventuais modificações
+
 const Logo = () => {
     return (
         <>

@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import Logo from '../components/Logo/Logo';
+import BotaoIcone from '@/components/BotaoIcone';
+import { IconUserCircle } from '@/assets/icones';
+
 
 
 
 const BarraSuperior = () => {
     return (
         <>
-            <div className="py-6 container mx-auto flex justify-between items-center">
+            <div className="py-6 flex justify-between items-center">
 
                 <Logo />
 
@@ -15,7 +18,9 @@ const BarraSuperior = () => {
                     <Link href="/">Experiências</Link> {/* Para usar o "link" é necessário importar o Link do Next.js */}
                 </div>
 
-                <button className='rounded-md border-2'>Entrar</button>
+                <BotaoIcone icone={(<IconUserCircle aria-label="Icone de usuario" size={20} />)}>
+                    Entrar
+                </BotaoIcone>
 
             </div>
         </>
