@@ -4,11 +4,13 @@
 import {
     IconUserCircle,
     IconSearch,
-    IconAdjustmentsHorizontal
+    IconAdjustmentsHorizontal,
+    IconHeart,
+    IconStar
 
 } from '@tabler/icons-react'
 
 
 
 
-export {IconUserCircle, IconSearch, IconAdjustmentsHorizontal}
+export {IconUserCircle, IconSearch, IconAdjustmentsHorizontal, IconHeart, IconStar}

@@ -40,7 +40,7 @@ const icones = [
     },
     {
       "id": "0006",
-      "description": "Casas triangulares",
+      "description": "Casas Triangulares",
       "source": "https://web.codans.com.br/airbnb/img/icon/0006.jpg",
       "url": "/casas-triangulares"
     },
