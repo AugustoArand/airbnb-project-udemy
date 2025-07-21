@@ -23,7 +23,7 @@ const Acomodacao = ({
     <figure className="relative">
       <div className="p-2 absolute w-full flex flex-row justify-between items-center">
         <span className="bg-white rounded-full px-4 py-1 font-semibold">
-          Preferido dos Hospedes
+          {preferidoHospedes ? "Preferido" : "Novo"}
         </span>
         <IconHeart
           aria-label="Icone de coração"
