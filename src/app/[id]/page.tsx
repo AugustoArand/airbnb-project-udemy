@@ -1,3 +1,5 @@
+import AcomodacaoDepoimentos from "@/widgets/AcomodacoesDepoimentos";
+import AcomodacaoDetalhes from "@/widgets/AcomodacoesDetalhes";
 import BarraPesquisa from "@/widgets/BarraPesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
 import Galeria from "@/widgets/Galeria";
@@ -245,6 +247,11 @@ export default async function Page({ params }: { params: Promise<PageProps> }) {
       <main className="container mx-auto py-6">
         <h1 className="text-3xl">{acomodacao.title}</h1>
         <Galeria fotos={acomodacao.photos} />
+        <div className="flex flex-col md:flex-row">
+          <AcomodacaoDetalhes />
+          <AcomodacaoDepoimentos />
+
+        </div>
       </main>
 
       <footer className="bg-gray-200">

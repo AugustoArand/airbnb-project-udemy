@@ -1,3 +1,4 @@
+import { fetchData } from "@/utils/api";
 import Acomodacoes from "@/widgets/Acomodacoes";
 
 import BarraPesquisa from "@/widgets/BarraPesquisa";
@@ -5,7 +6,10 @@ import BarraSuperior from "@/widgets/BarraSuperior";
 import NavegacaoAbaHorizontal from "@/widgets/NavegacaoAbaHorizontal";
 import Rodape from "@/widgets/Rodape";
 
-export default function Home() {
+export default async function Home() {
+
+  const dados = await fetchData();
+  
   return (
     <>
       <header className="container mx-auto">
@@ -14,7 +18,7 @@ export default function Home() {
       </header>
 
       <main className="my-6 container mx-auto">
-        <NavegacaoAbaHorizontal />
+        <NavegacaoAbaHorizontal icons={dados.icons} />
         <Acomodacoes />
       </main>
 
