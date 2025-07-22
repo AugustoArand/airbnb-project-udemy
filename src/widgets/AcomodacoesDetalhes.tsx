@@ -1,11 +1,19 @@
+import { Accommodation } from "@/types/Airbnb";
 import { IconAlarmSmoke, IconBrandCarbon, IconDesk, IconDog, IconParking, IconPool, IconSailboat, IconToolsKitchen2, IconWifi } from "@tabler/icons-react";
 import IconPhoto from "@tabler/icons-react/dist/esm/icons/IconPhoto";
 import Link from "next/link";
 
-const AcomodacaoDetalhes = () => {
+interface AcomodacaoDetalhesProps {
+    accommodation: Accommodation
+}
+
+const AcomodacaoDetalhes = (props: AcomodacaoDetalhesProps) => {
+
+    const acomodacao = props.accommodation
+
     return (
         <div className="w-full py-4">
-            <h2 className="text-xl font-semibold"> Depoimentos </h2>
+            <h2 className="text-xl font-semibold"> {acomodacao.location.description} </h2>
             <ul className="flex flex-row gap-2">
                 <li>10 Hospedes |</li>
                 <li>5 Suites |</li>

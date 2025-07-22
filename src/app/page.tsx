@@ -19,7 +19,7 @@ export default async function Home() {
 
       <main className="my-6 container mx-auto">
         <NavegacaoAbaHorizontal icons={dados.icons} />
-        <Acomodacoes />
+        <Acomodacoes accommodation={dados.accommodation}/>
       </main>
 
       <hr className="my-6" />

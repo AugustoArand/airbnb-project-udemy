@@ -11,7 +11,7 @@ export interface Accommodation {
     hasBadge: boolean
     host: string
     slug: string
-    location: string
+    location: Location
     price: number
     rating: number
     photos: Photo []
@@ -39,5 +39,5 @@ export interface Location {
     description: string
     city: string
     state: string
-
+    country: string
 }
