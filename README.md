@@ -1,6 +1,7 @@
 # 📋 Resumo do Projeto Demo Airbnb
 <img width="784" height="423" alt="image" src="https://github.com/user-attachments/assets/ceb49b37-9e35-46cc-9637-876d92391394" />
-<img width="784" height="423" alt="image" src="https://github.com/user-attachments/assets/cbe230a3-ae6c-4b93-b2f3-05f1c4de921a" />
+<img width="787" height="421" alt="image" src="https://github.com/user-attachments/assets/626a810d-a74c-4acc-82b9-2d3268541a3b" />
+
 
 
 ## 🚀 Framework e Tecnologias Base
