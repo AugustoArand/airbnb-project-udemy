@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📋 Resumo do Projeto Demo Airbnb
+## 🚀 Framework e Tecnologias Base
+- Next.js 15.4.1 - Framework React com Server-Side Rendering (SSR)
+- React 18.3.1 - Biblioteca para construção de interfaces
+- TypeScript 5 - Tipagem estática para JavaScript
+- Turbopack - Bundler ultrarrápido para desenvolvimento
+## 🎨 Estilização e UI
+- Tailwind CSS 4 - Framework CSS utility-first
+- PostCSS - Processador CSS
+- Responsive Design - Grid responsivo com breakpoints
+- @tabler/icons-react - Biblioteca de ícones SVG
+## 📱 Componentes e Interatividade
+- Swiper.js - Carrossel/slider para navegação horizontal
+- Next/Image - Otimização automática de imagens
+- Next/Link - Navegação client-side otimizada
+## 🏗️ Arquitetura e Organização
 
-## Getting Started
+### 🔧 Conceitos de Desenvolvimento
+- TypeScript & Tipagem
+- Interfaces personalizadas (Accommodation, Photo, Testimonials, Location)
+- API Response typing com Promise<AirbnbApi>
+- Type safety em todo o projeto
+- Functional Components com hooks
+- Fetch de Dados
+- Async/Await para chamadas API
+- Error handling com try/catch
+- External API consumption
 
-First, run the development server:
+- App Router (Next.js 13+)
+- Dynamic routes [id]/page.tsx
+- Static e Dynamic rendering
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Recursos Específicos do Projeto
+- Layout Responsivo
+- Grid CSS com breakpoints:
+- Image optimization (Next/Image)
+- Code splitting automático
+- SEO-friendly routing
+- Performance com Turbopack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Ferramentas de Desenvolvimento
+- ESLint - Linting de código
+- PostCSS - Processamento CSS
+- Node.js Types - Tipagem para Node.js
+- Development server com hot reload
+## 📊 Estrutura de Dados
+- API RESTful consumption
+- Nested data structures (acomodações com fotos, depoimentos)
+- Relational data (accommodation → photos → testimonials)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
