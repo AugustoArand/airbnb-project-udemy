@@ -1,4 +1,8 @@
 # 📋 Resumo do Projeto Demo Airbnb
+<img width="784" height="423" alt="image" src="https://github.com/user-attachments/assets/ceb49b37-9e35-46cc-9637-876d92391394" />
+<img width="784" height="423" alt="image" src="https://github.com/user-attachments/assets/cbe230a3-ae6c-4b93-b2f3-05f1c4de921a" />
+
+
 ## 🚀 Framework e Tecnologias Base
 - Next.js 15.4.1 - Framework React com Server-Side Rendering (SSR)
 - React 18.3.1 - Biblioteca para construção de interfaces
