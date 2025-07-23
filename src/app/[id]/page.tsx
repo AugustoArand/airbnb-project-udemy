@@ -1,4 +1,4 @@
-import { fetchDataById } from "@/utils/api";
+import { fetchData, fetchDataById } from "@/utils/api";
 import AcomodacaoDepoimentos from "@/widgets/AcomodacoesDepoimentos";
 import AcomodacaoDetalhes from "@/widgets/AcomodacoesDetalhes";
 import BarraPesquisa from "@/widgets/BarraPesquisa";
@@ -7,7 +7,14 @@ import Galeria from "@/widgets/Galeria";
 import Rodape from "@/widgets/Rodape";
 import { notFound } from "next/navigation";
 
-
+// Função obrigatória para rotas dinâmicas com output: 'export'
+export async function generateStaticParams() {
+  const dados = await fetchData();
+  
+  return dados.accommodation.map((acomodacao) => ({
+    id: encodeURIComponent(acomodacao.slug),
+  }));
+}
 
 interface PageProps {
   id: string;
