@@ -42,8 +42,19 @@ jobs:
       - name: Build with Next.js
         run: npm run build
 
+      - name: List build output (debug)
+        run: |
+          echo "Contents of current directory:"
+          ls -la
+          echo "Looking for out directory:"
+          find . -name "out" -type d 2>/dev/null || echo "No 'out' directory found"
+          echo "Looking for .next directory:"
+          find . -name ".next" -type d 2>/dev/null || echo "No '.next' directory found"
+
       - name: Create .nojekyll file
-        run: touch ./out/.nojekyll
+        run: |
+          mkdir -p ./out
+          touch ./out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
